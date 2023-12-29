@@ -8,7 +8,7 @@ app.get("/api", (req, res) => {
 
 app.get("/api/multiplier/:number", (req, res) => {
   const number = req.params.number;
-  res.send("your number is : ", number*2);
+  res.send(`your number is : ${number*2}`);
 });
 
 app.listen(port, () => {
